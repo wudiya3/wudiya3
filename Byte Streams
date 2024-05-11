@@ -1,0 +1,10 @@
+```java
+import java.io.*;
+ 
+public class StreamExample {
+    public static void main(String[] args) {
+        try {
+            // impost
+            FileInputStream fis = new FileInputStream("input.txt");
+            // 
+            FileOutputStream fos = new FileOutputStream("output.txt");
