@@ -1,0 +1,13 @@
+#define _CRT_SECURE_NO_WARNINGS
+#define MAX_ROW 3
+#define MAX_COL 3
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+void init(char chessBoard[MAX_ROW][MAX_COL]) {
+	for (int row = 0; row < MAX_ROW; row++) {
+		for (int col = 0; col < MAX_COL; col++) {
+			chessBoard[row][col] = ' ';
+		}
+	}
+}
