@@ -1,0 +1,18 @@
+template<class R, class C, class... DArgs, class P, class... Args>
+void Wrap(R(C::*f)(DArgs...) const, P && p, Args && ... args)
+{
+m_f = [&, f]{return (*p.*f)(std::forward<Args>(args)...); };
+}
+
+// non-const member function
+template<class R, class C, class... DArgs, class P, class... Args>
+void Wrap(R(C::*f)(DArgs...), P && p, Args && ... args)
+{
+m_f = [&, f]{return (*p.*f)(std::forward<Args>(args)...); };
+}
+
+R Excecute()
+{
+return m_f();
+}
+};
