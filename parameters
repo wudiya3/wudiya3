@@ -1,0 +1,14 @@
+Set the following parameters for CDSBillingSubscriber 
+clientID="CDSBillingSubscriberUniqueClientID" 
+subName="CDSBillingSubscriberUniqueSubscriptionName" 
+selector="null" 
+durable="false" 
+transactional="false" 
+ 
+# CDSBillingSubscriber Parameter Constants 
+connFactory="cds.messaging.billing.TopicConnectionFactory" 
+topicName="cds.messaging.billingTopic" 
+ 
+# Sun Java System Application Server Parameters 
+jndiCtxFactory="null" 
+providerURL="null" 
