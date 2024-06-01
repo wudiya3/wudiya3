@@ -1,0 +1,7 @@
+}
+ 
+nodeptr_t update_bullet(nodeptr_t listnode)
+{
+    nodeptr_t templist = listnode;
+    while (templist->next != nullptr)
+    {
