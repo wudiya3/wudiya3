@@ -1,0 +1,11 @@
+void print_bullet(nodeptr_t listnode)
+{
+    nodeptr_t templist = listnode;
+    while (templist->next != nullptr)
+    {
+        gotoxy((templist->next->x), templist->next->y);
+        printf("|");
+        templist = templist->next;
+    }
+    return;
+}
