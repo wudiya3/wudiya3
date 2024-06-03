@@ -1,0 +1,5 @@
+if(welcome!=0){
+  welcome->close();
+  delete welcome;
+  this->show();
+}
